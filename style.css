@@ -1,22 +1,87 @@
-*,
-html,
-body, {
-    padding: 0px;
-    margin: 0px;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
-.FContainer {
+/*navigasinya*/
+.navigasibar{
+    position: fixed;
     width: 100%;
-    height: 100vh;
-    background-color: lightslategrey;
+    padding: 15px 0;
+    background-color: rgb(49, 49, 49);
+    font-family: 'Ubuntu', sans-serif;
 }
 
-.wrapper {
+.max-width {
+    max-width: 1500px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.navigasibar .max-width {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 600px;
-    height: 60px;
-    justify-content: space-between;
-    background-color: rgb(32, 32, 32);
+    align-items: center;
+    justify-content: space-between
+}
+
+.navigasibar .logo a {
+    font-size: 35px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.navigasibar .logo a span{
+    font-size: 35px;
+    font-weight: 600;
+    color: rgb(20, 220, 170);
+}
+
+.navigasibar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navigasibar .menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    margin-left: 25px;
+}
+
+
+/* styling untuk section home */
+
+.home {
+    display: flex;
+    background: url(/images/background.jpg);
+    height: 100vh;
+    color:#fff;
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.home .max-width {
+    margin: auto 0 auto 40px;
+}
+
+.home .hm-content .text1 {
+    font-size: 27px;
+}
+
+.home .hm-content .text2 {
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.home .hm-content .text3 {
+    font-size: 27px;
+    margin: 5px 0;
+}
+
+.home .hm-content .text3 span{
+    color: rgb(20, 220, 170);
 }
