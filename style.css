@@ -51,6 +51,16 @@
     margin-left: 25px;
 }
 
+.navigasibar .menu li a:hover {
+    text-decoration: none;
+    color: rgb(20, 220, 170);
+    font-size: 20px;
+    margin-left: 25px;
+    animation: .3s ease;
+}
+
+
+
 
 /* styling untuk section home */
 
@@ -84,4 +94,23 @@
 
 .home .hm-content .text3 span{
     color: rgb(20, 220, 170);
+}
+
+.text1 {
+    animation-duration: 3s;
+    animation-name: ngeslidekiri;
+    animation-iteration-count: initial;
+}
+
+@keyframes ngeslidekiri {
+    from {
+        margin-left: 100%;
+        width: 300%;
+        opacity: 0%;
+    }
+    to {
+        margin-left: 0;
+        width: 300%;
+        opacity: 100%;
+    }
 }
