@@ -80,6 +80,16 @@
     display: none;
 }
 
+.navigasibar .menu li a:hover {
+    text-decoration: none;
+    color: rgb(20, 220, 170);
+    font-size: 20px;
+    margin-left: 25px;
+    animation: .3s ease-in-out;
+}
+
+
+
 
 /* styling untuk section home */
 
