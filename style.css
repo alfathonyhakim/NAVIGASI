@@ -56,7 +56,7 @@
     color: rgb(20, 220, 170);
     font-size: 20px;
     margin-left: 25px;
-    animation: .3s ease;
+    animation: .3s ease-in-out;
 }
 
 
@@ -97,8 +97,20 @@
 }
 
 .text1 {
-    animation-duration: 3s;
     animation-name: ngeslidekiri;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+}
+
+.text2 {
+    animation-name: ngeslidekiri;
+    animation-duration: 4s;
+    animation-iteration-count: initial;
+}
+
+.text3 {
+    animation-name: ngeslidekiri;
+    animation-duration: 6s;
     animation-iteration-count: initial;
 }
 
@@ -110,7 +122,7 @@
     }
     to {
         margin-left: 0;
-        width: 300%;
+        width: 100%;
         opacity: 100%;
     }
 }
