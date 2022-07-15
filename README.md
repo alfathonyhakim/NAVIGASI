@@ -1,9 +1,7 @@
 # alfathonyhakim
 
-assalamualaikum
-
+assalamualaikum<<<<<< HEAD
 Ini adalah repo saya dan ini juga permulaan buat saya, disini saya sedang belajar di hacktiv8 dan tentunya praktek untuk mengerjakan test test yg ada ,terimakasih sekian
-<<<<<<< HEAD
 -terhapus test
 -upload 1
 =======

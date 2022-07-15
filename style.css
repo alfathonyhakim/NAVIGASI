@@ -10,9 +10,14 @@
 .navigasibar{
     position: fixed;
     width: 100%;
-    padding: 15px 0;
-    background-color: rgb(49, 49, 49);
+    padding: 30px 0;
     font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.navigasibar.wush{
+    padding: 30px 0;
+    background: rgb(20, 220, 170);
 }
 
 .max-width {
@@ -24,20 +29,26 @@
 .navigasibar .max-width {
     display: flex;
     align-items: center;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 .navigasibar .logo a {
-    font-size: 35px;
+    font-size: 40px;
     font-weight: 600;
     color: #fff;
 }
 
 .navigasibar .logo a span{
-    font-size: 35px;
+    font-size: 40px;
     font-weight: 600;
     color: rgb(20, 220, 170);
+    transition: all 0.3s ease;
 }
+
+.navigasibar.wush .logo a span{
+    color: #fff;
+}
+
 
 .navigasibar .menu li {
     list-style: none;
@@ -47,8 +58,26 @@
 .navigasibar .menu li a {
     text-decoration: none;
     color: #fff;
-    font-size: 20px;
+    font-size: 25px;
     margin-left: 25px;
+    transition: color .5s ease;
+}
+
+.navigasibar .menu li a:hover {
+    color: rgb(20, 220, 170);
+}
+
+.navigasibar.wush .menu li a:hover {
+    color: rgb(100, 100, 100);
+}
+
+/* styling tombolmenu */
+
+.tombol-mnu {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
 }
 
 
@@ -84,4 +113,48 @@
 
 .home .hm-content .text3 span{
     color: rgb(20, 220, 170);
+}
+
+/* media query dimulai */
+
+@media (max-width: 974px){
+    
+    .max-width {
+        padding: 0 50px;
+    }
+
+    .tombol-mnu{
+        display: block;
+        z-index: 999;
+    }
+
+    .tombol-mnu i.aktif::before{
+        content: "\f00d";
+    }
+
+    .navigasibar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+
+    .navigasibar .menu.aktif{
+        left: 0;
+    }
+
+    .navigasibar .menu li{
+        display: block;   
+    }
+    .navigasibar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+
+    }
 }
