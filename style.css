@@ -38,6 +38,12 @@
     color: #fff;
 }
 
+.navigasibar .logo:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: .4s ease-in-out;
+}
+
 .navigasibar .logo a span{
     font-size: 40px;
     font-weight: 600;
@@ -60,11 +66,7 @@
     color: #fff;
     font-size: 25px;
     margin-left: 25px;
-    transition: color .5s ease;
-}
-
-.navigasibar .menu li a:hover {
-    color: rgb(20, 220, 170);
+    transition: color .9s ease;
 }
 
 .navigasibar.wush .menu li a:hover {
@@ -83,9 +85,9 @@
 .navigasibar .menu li a:hover {
     text-decoration: none;
     color: rgb(20, 220, 170);
-    font-size: 20px;
+    font-size: 25px;
     margin-left: 25px;
-    animation: .3s ease-in-out;
+    transition: .3s ease;
 }
 
 
@@ -108,30 +110,57 @@
 
 .home .hm-content .text1 {
     font-size: 27px;
+    transition: .3s ease-in-out;
 }
 
 .home .hm-content .text2 {
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
+    transition: .3s ease-in-out;
 }
 
 .home .hm-content .text3 {
     font-size: 27px;
     margin: 5px 0;
+    transition: .3s ease-in-out;
 }
 
 .home .hm-content .text3 span{
     color: rgb(20, 220, 170);
+    font-weight: 500;
+    transition: .3s ease-in-out;
+}
+.home .hm-content a{
+    display: inline-block;
+    background: rgb(20, 220, 170);
+    color: #fff;
+    font-size: 25px;
+    padding: 11px 35px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid rgb(20, 220, 170);
+    transition: all 0.3s ease;
+}
+.home .hm-content a:hover{
+    color:rgb(20, 220, 170);
+    background: none;
+}
+/* media query dimulai */
+@media(max-width: 1104){
+    .home .max-width{
+        margin-left: 0;
+    }
 }
 
-/* media query dimulai */
-
-@media (max-width: 974px){
-    
-    .max-width {
+@media(max-width: 991px){
+    .max-width{
         padding: 0 50px;
     }
+}
+
+@media (max-width: 947px){
+    
 
     .tombol-mnu{
         display: block;
@@ -166,5 +195,38 @@
         margin: 20px 0;
         font-size: 25px;
 
+    }
+    .home .hm-content .text2{
+        font-size: 70px;
+    }
+    .home .hm-content .text3{
+        font-size: 35px;
+    }
+    .home .hm-content a{
+        font-size: 23px;
+        padding: 10px 30px;
+    }
+
+}
+@media (max-width: 690px){
+    .max-width{
+    padding: 0 23px;
+    }
+    .home .hm-content .text2{
+        font-size: 60px;
+    }
+    .home .hm-content .text3{
+        font-size: 32px;
+    }
+    .home .hm-content a{
+        font-size: 20px;
+    }
+}
+@media (max-width: 500px){
+    .home .hm-content .text2{
+        font-size: 50px;
+    }
+    .home .hm-content .text3{
+        font-size: 27px;
     }
 }
