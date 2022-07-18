@@ -21,9 +21,10 @@
 }
 
 .max-width {
-    max-width: 2000px;
+    max-width: 1300px;
     padding: 0 80px;
     margin: auto;
+    /* background-color: blue; */
 }
 
 .navigasibar .max-width {
@@ -161,7 +162,7 @@ section{
     padding: 100px 0;
 }
 
-.about{
+.about,.portfolio{
     font-family: 'Poppins',sans-serif;
 }
 
@@ -199,14 +200,16 @@ section{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    /* background-color: violet; */
 }
 .about .abt-content .left{
     width: 45%;
+    /* background-color: red; */
 }
 
 .about .abt-content .left img{
     height: 400px;
-    weight: 400px;
+    width: 400px;
     object-fit: cover;
     border-radius: 10px;
 }
@@ -235,7 +238,7 @@ section{
     font-size: 20px;
     padding: 10px 30px;
     margin-top: 20px;
-    border-radius: 6px;
+    border-radius: 4px;
     border: 2px solid rgb(20, 220, 170);
     transition: all 0.3s ease;
 }
@@ -244,28 +247,41 @@ section{
     background: none;
 }
 
+/* section untuk portfolio */
+.portfolio{
+    
+}
+
 
 
 
 /* media query supaya responsif*/
-@media(max-width: 1104){
+@media(max-width: 1300px){
     .home .max-width{
         margin-left: 0;
     }
 }
 
-@media(max-width: 991px){
-    .max-width{
-        padding: 0 50px;
+@media(max-width: 1104px){
+    .about .abt-content .left img{
+        height: 350px;
+        width: 350px;
     }
 }
 
-@media (max-width: 890px){
-    
+@media(max-width: 991px){
+    .max-width{
+        padding: 0 80px;
+        /* background-color: yellow; */
+    }
+}
+
+@media (max-width: 947px){
+    /* 890px */
 
     .tombol-mnu{
         display: block;
-        z-index: 991;
+        z-index: 999;
     }
 
     .tombol-mnu i.aktif::before{
@@ -307,8 +323,23 @@ section{
         font-size: 23px;
         padding: 10px 30px;
     }
-
+    .max-width {
+        max-width: 800px;
+    }
+    .about .abt-content .column{
+        width: 100%;
+    }
+    .about .abt-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .abt-content .right{
+        flex: 100%
+    }
 }
+
+
 @media (max-width: 690px){
     .max-width{
     padding: 0 23px;
