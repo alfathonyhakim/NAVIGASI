@@ -156,6 +156,7 @@
 /* styling untuk konten yg sama */
 
 section{
+    /* background-color: #393d45; warna abu */
     padding: 100px 0;
 }
 section .title{
@@ -189,16 +190,17 @@ section .title::after{
     transform: translateX(-50%);
 }
 
-/* section styling untuk semua yg di dalam section */
+/* about section */
 
 .about,.portfolio{
     font-family: 'Poppins',sans-serif;
 }
 
 .about .title::after{
-    content: "siapa aku";
+    content: "Siapa aku";
 }
-.about .abt-content{
+.about .abt-content,
+.portfolio .prt-content {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -253,12 +255,59 @@ section .title::after{
 
 
 /* section untuk portfolio */
-.portfolio .title::after{
-    content: "Skill saya";
+.portfolio{
+    color: #fff;
+    background: #393d45;
 }
 
+.portfolio .title::before{
+    background: #fff;
+}
+
+.portfolio .title::after{
+    background: #393d45;
+    content: "Skillku";
+}
+
+.portfolio .prt-content .kartu{
+    width: calc(33% - 20px);
+    background: #454c5a;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20 25;
+    /* padding: 20px 25px; */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.portfolio .prt-content .kartu .kotak:hover {
+    background: #14dcaa;
+    border-radius: 6px;
+}
+.portfolio .prt-content .kartu .kotak{
+    transition: all 0.3s ease;
+ }
+
+ .portfolio .prt-content .kartu:hover .kotak{
+    transform: scale(1.05);
+ }
 
 
+.portfolio .prt-content .kartu i{
+   font-size: 50px;
+   color: rgb(20, 220, 170);
+   transition: color 0.3s ease;
+}
+
+.portfolio .prt-content .kartu:hover i{
+    color: #fff;
+ }
+
+.portfolio .prt-content .kartu .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+ }
 
 /* media query supaya responsif*/
 @media(max-width: 1300px){
@@ -342,6 +391,10 @@ section .title::after{
     .about .abt-content .right{
         flex: 100%
     }
+    .portfolio .prt-content .kartu{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
 }
 
 
@@ -357,6 +410,9 @@ section .title::after{
     }
     .home .hm-content a{
         font-size: 20px;
+    }
+    .portfolio .prt-content .kartu{
+        width: 100%;
     }
 }
 @media (max-width: 500px){
