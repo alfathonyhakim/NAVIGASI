@@ -153,20 +153,12 @@
     background: none;
 }
 
+/* styling untuk konten yg sama */
 
-
-
-
-/* section tentang styling */
 section{
     padding: 100px 0;
 }
-
-.about,.portfolio{
-    font-family: 'Poppins',sans-serif;
-}
-
-.about .title{
+section .title{
     position: relative;
     text-align: center;
     font-size: 40px;
@@ -175,17 +167,18 @@ section{
     padding-bottom: 20px;
     font-family: 'Ubuntu',sans-serif;
 }
-.about .title::before{
+section .title::before{
     content: "";
     position: absolute;
     bottom: 0px;
+    left: 50%;
+    /* width: 180px; standard*/
     width: 150px;
     height: 3px;
     background: #111;
-    transform: translateX();
+    transform: translateX(-50%);
 }
-.about .title::after{
-    content: "siapa aku";
+section .title::after{
     position: absolute;
     bottom: -12px;
     left: 50%;
@@ -194,6 +187,16 @@ section{
     padding: 5px;
     background: #fff;
     transform: translateX(-50%);
+}
+
+/* section styling untuk semua yg di dalam section */
+
+.about,.portfolio{
+    font-family: 'Poppins',sans-serif;
+}
+
+.about .title::after{
+    content: "siapa aku";
 }
 .about .abt-content{
     display: flex;
@@ -247,9 +250,11 @@ section{
     background: none;
 }
 
+
+
 /* section untuk portfolio */
-.portfolio{
-    
+.portfolio .title::after{
+    content: "Skill saya";
 }
 
 
