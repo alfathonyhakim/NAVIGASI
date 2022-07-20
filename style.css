@@ -320,7 +320,76 @@ section .title::after{
     width: calc(50% - 30px);
 }
 
+.blog .blog-content .left .text {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
 
+.blog .blog-content .left p{
+    text-align: justify;
+}
+
+.blog .blog-content .left a{
+    display: inline-block;
+    background: rgb(20, 220, 170);
+    color: #fff;
+    font-size: 18px;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid rgb(20, 220, 170);
+    transition: all 0.3s ease;
+}
+.blog .blog-content .left a:hover{
+    color: rgb(20, 220, 170);
+    background: none;
+}
+.blog .blog-content .right .bar{
+    margin-bottom: 15px;
+}
+
+.blog .blog-content .right .infobar{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.blog .blog-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.blog .blog-content .right .line{
+    height: 5px;
+    width: 100%;
+    background-color: lightgrey;
+    position: relative;
+}
+
+.blog .blog-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgb(20, 220, 170);
+}
+
+.blog .blog-content .right .line.html::before{
+    width: 90%;
+}
+.blog .blog-content .right .line.css::before{
+    width: 60%;
+}
+.blog .blog-content .right .line.js::before{
+    width: 20%;
+}
+.blog .blog-content .right .line.design::before{
+    width: 50%;
+}
 
 
 /* media query supaya responsif*/
@@ -408,6 +477,10 @@ section .title::after{
     .portfolio .prt-content .kartu{
         width: calc(50% - 10px);
         margin-bottom: 20px;
+    }
+    .blog .blog-content .column{
+        width: 100%;
+        margin-bottom: 35px;
     }
 }
 
