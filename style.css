@@ -156,9 +156,22 @@
 /* styling untuk konten yg sama */
 
 section{
-    /* background-color: #393d45; warna abu */
     padding: 100px 0;
 }
+
+.about,.portfolio,.blog{
+    font-family: 'Poppins',sans-serif;
+}
+
+.about .abt-content,
+.portfolio .prt-content, .blog .blog-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: violet; */
+}
+
 section .title{
     position: relative;
     text-align: center;
@@ -192,21 +205,11 @@ section .title::after{
 
 /* about section */
 
-.about,.portfolio{
-    font-family: 'Poppins',sans-serif;
-}
 
 .about .title::after{
     content: "Siapa aku";
 }
-.about .abt-content,
-.portfolio .prt-content {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    /* background-color: violet; */
-}
+
 .about .abt-content .left{
     width: 45%;
     /* background-color: red; */
@@ -274,7 +277,6 @@ section .title::after{
     background: #454c5a;
     text-align: center;
     border-radius: 6px;
-    padding: 20 25;
     /* padding: 20px 25px; */
     cursor: pointer;
     transition: all 0.3s ease;
@@ -294,7 +296,7 @@ section .title::after{
 
 
 .portfolio .prt-content .kartu i{
-   font-size: 50px;
+   font-size: 51px;
    color: rgb(20, 220, 170);
    transition: color 0.3s ease;
 }
@@ -308,6 +310,18 @@ section .title::after{
     font-weight: 500;
     margin: 10px 0 7px 0;
  }
+
+/* blog styling */
+.blog .title::after{
+    content: "Ini blog saya";
+}
+
+.blog .blog-content .column{
+    width: calc(50% - 30px);
+}
+
+
+
 
 /* media query supaya responsif*/
 @media(max-width: 1300px){
