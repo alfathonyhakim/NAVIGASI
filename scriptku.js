@@ -12,3 +12,23 @@ $(document).ready(function(){
         $('.tombol-mnu i').toggleClass("aktif");
     });
 });
+
+// ini js untuk belajar adik
+// const nama = "fiki";
+// let usia = 15;
+
+// function fiki(){
+//     let cariFiki;
+
+//     if (usia > 10){
+//         cariFiki = "kamu yang saya cari";
+//     }else{
+//         cariFiki = "salah orang bro";
+//     }
+
+//     return console.log('ketemu juga', cariFiki)
+// }
+
+// console.log(nama)
+// console.log(usia)
+// fiki();
