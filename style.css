@@ -159,12 +159,13 @@ section{
     padding: 100px 0;
 }
 
-.about,.portfolio,.blog,.teams{
+.about,.portfolio,.blog,.teams,.contact{
     font-family: 'Poppins',sans-serif;
 }
 
 .about .abt-content,
-.portfolio .prt-content, .blog .blog-content {
+.portfolio .prt-content, .blog .blog-content,
+.contact .ctc-content {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -282,14 +283,16 @@ section .title::after{
     background: #454c5a;
     text-align: center;
     border-radius: 6px;
-    /* padding: 20px 25px; */
+    padding: 20px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
-.portfolio .prt-content .kartu .kotak:hover {
+
+.portfolio .prt-content .kartu:hover {
     background: #14dcaa;
     border-radius: 6px;
+    padding: 20px 25px;
 }
 .portfolio .prt-content .kartu .kotak{
     transition: all 0.3s ease;
@@ -468,10 +471,62 @@ section .title::after{
     border-radius: 14px;
 }
 
-.owl-dot.active, .owl-dot:hover{
+.owl-dot.active, 
+.owl-dot:hover{
     background: rgb(20, 220, 170)!important;
     
 }
+
+.contact .title::after {
+    content: "Hubungi kami";
+}
+
+.contact .ctc-content .column {
+    width: calc(50% - 30px);
+}
+
+.contact .ctc-content .column .text {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contact .ctc-content .column .left p{
+    text-align: justify;
+}
+
+.contact .ctc-content .column .left .icons {
+    margin: 10px 0;
+}
+
+.contact .ctc-content .column .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+.contact .ctc-content .column .row .info {
+    margin-left: 30px;
+}
+
+.contact .ctc-content .column .row i{
+    font-size: 25px;
+    color: #14dcaa;
+
+}
+
+.contact .ctc-content .column .info .head{
+    font-weight: 500;
+}
+
+.contact .ctc-content .column .info .sub-title{
+    color: #333;
+}
+
+
+
+
+
 
 
 
