@@ -5,15 +5,44 @@ $(document).ready(function(){
         }else{
             $('.navigasibar').removeClass("wush");
         }
+	if(this.scrollY > 500){
+		$('.scrollup-btn').addClass("show");
+	}else{
+		$('.scrollup-btn').removeClass("show");
+	}
     });
+
+	//ngeslide atas script
+	$('.scrollup-btn').click(function(){
+		$('html').animate({scrollTop: 0});
+	});
 
     
     // kita beralih (togle) ke menu atau navigasi Script
     $('.tombol-mnu').click(function(){
         $('.navigasibar .menu').toggleClass("aktif");
         $('.tombol-mnu i').toggleClass("aktif");
+	    });
     });
-});
+
+
+	// script untuk animasi mengetik dari cdn
+	var mengetik = new Typed(".Mengetik", {
+		strings: ["Front End Developer","Blogger","Freelancer","Junior Web Programming"],
+		typeSpeed: 80,
+		backSpeed: 60,
+		loop: true
+	});
+
+	var mengetik = new Typed(".Mengetik2", {
+		strings: ["Front End Developer","Blogger","Freelancer","Junior Web Programming"],
+		typeSpeed: 80,
+		backSpeed: 60,
+		loop: true
+	});
+
+
+
 
 // kuda script
 $('.kudawks').owlCarousel({
